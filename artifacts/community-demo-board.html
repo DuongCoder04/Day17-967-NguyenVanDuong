@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TraVy — Test Community Engagement</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #222; line-height: 1.6; }
+    .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    .subtitle { color: #555; margin-bottom: 24px; font-size: 16px; }
+    .meta { background: white; border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .meta-item { font-size: 14px; color: #444; }
+    .meta-item strong { color: #222; }
+    .section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .section h2 { font-size: 20px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e8f5e9; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-right: 4px; }
+    .badge-green { background: #e8f5e9; color: #2e7d32; }
+    .badge-blue { background: #e3f2fd; color: #1565c0; }
+    .badge-orange { background: #fff3e0; color: #e65100; }
+    .sample { background: #fafafa; border-left: 4px solid #2e7d32; border-radius: 8px; padding: 16px; margin: 12px 0; font-size: 14px; }
+    .sample h4 { color: #2e7d32; margin-bottom: 8px; }
+    .sample p { margin-bottom: 4px; color: #333; }
+    .sample-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+    @media (max-width: 640px) { .sample-row { grid-template-columns: 1fr; } }
+    .card-demo { border: 1px solid #e0e0e0; border-radius: 10px; padding: 16px; background: #fafafa; }
+    .card-demo h4 { font-size: 15px; margin-bottom: 4px; }
+    .card-demo .loc { font-size: 13px; color: #666; margin-bottom: 8px; }
+    .card-demo p { font-size: 13px; color: #444; }
+    .test-setup { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 12px; }
+    @media (max-width: 640px) { .test-setup { grid-template-columns: 1fr; } }
+    .step { background: #f9f9f9; border-radius: 8px; padding: 12px; text-align: center; }
+    .step .num { background: #2e7d32; color: white; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; margin-bottom: 8px; }
+    .step h4 { font-size: 14px; margin-bottom: 4px; }
+    .step p { font-size: 12px; color: #555; }
+    .mock-post { background: #f0f7ff; border: 1px solid #bbdefb; border-radius: 12px; padding: 16px; margin: 16px 0; }
+    .mock-post .post-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .mock-post .avatar { width: 40px; height: 40px; background: #1976d2; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; }
+    .mock-post .post-meta { font-size: 13px; }
+    .mock-post .post-meta .name { font-weight: 600; }
+    .mock-post .post-meta .time { color: #666; }
+    .mock-post .post-content { font-size: 14px; }
+    .btn-cta { display: inline-block; background: #2e7d32; color: white; padding: 8px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; margin-top: 8px; }
+    .form-preview { background: #fff; border: 2px dashed #bbb; border-radius: 10px; padding: 20px; margin: 12px 0; text-align: center; }
+    .form-preview h4 { color: #555; margin-bottom: 8px; }
+    .form-preview .fake-field { background: #f5f5f5; padding: 10px; border-radius: 6px; margin: 6px 0; font-size: 13px; color: #888; }
+    .form-preview .fake-btn { background: #ccc; padding: 8px 20px; border-radius: 6px; display: inline-block; font-size: 13px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 Test C: Community Engagement</h1>
+    <p class="subtitle">Before/after flow + test setup + sample outputs — đăng trong group du lịch Facebook / Reddit</p>
+
+    <div class="meta">
+      <span class="meta-item"><strong>Hypothesis:</strong> Pain đủ lớn để đổi tool</span>
+      <span class="meta-item"><strong>Kênh:</strong> Facebook "Review du lịch" / Reddit r/VietnamTravel</span>
+      <span class="meta-item"><strong>Thời lượng:</strong> 1 tuần theo dõi</span>
+    </div>
+
+    <!-- Setup -->
+    <div class="section">
+      <h2>🔧 Test Setup</h2>
+      <div class="test-setup">
+        <div class="step">
+          <div class="num">1</div>
+          <h4>Chuẩn bị mẫu</h4>
+          <p>2-3 lịch trình mẫu đẹp (Hội An, Đà Lạt, Hà Nội) = data TraVy + ChatGPT + design tay</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h4>Đăng bài</h4>
+          <p>Post kèm ảnh mẫu + mời gửi nhu cầu qua form/comment</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h4>Manual reply</h4>
+          <p>Trả lời từng comment bằng lịch trình tự làm + track phản ứng</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mock bài đăng -->
+    <div class="section">
+      <h2>📝 Bài đăng mẫu (Facebook / Reddit)</h2>
+      <div class="mock-post">
+        <div class="post-header">
+          <div class="avatar">T</div>
+          <div class="post-meta">
+            <div class="name">TraVy — AI Travel Planner</div>
+            <div class="time">Vừa xong • 5 phút trước</div>
+          </div>
+        </div>
+        <div class="post-content">
+          <p><strong>🔥 Mình đang thử làm tool tạo lịch trình du lịch Việt Nam tự động — đây là output cho Hội An 3 ngày 2 đêm 👇</strong></p>
+          <p style="margin: 8px 0;">📍 Chi tiết từng ngày: địa điểm + giờ + ẩm thực + chi phí ước tính, kèm cả citation nguồn (không bịa như ChatGPT).</p>
+          <p>Ai sắp đi tỉnh/thành nào comment hoặc điền form bên dưới, mình làm thử cho xem sao — hoàn toàn miễn phí, chỉ để test ý tưởng thôi ạ!</p>
+          <p style="margin-top: 8px; font-size: 13px; color: #666;">👇 Ảnh mẫu output bên dưới</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sample Outputs -->
+    <div class="section">
+      <h2>📸 Sample Outputs (chuẩn bị sẵn)</h2>
+      <div class="sample-row">
+        <div class="card-demo">
+          <h4>🏮 Hội An — 3 ngày 2 đêm</h4>
+          <div class="loc">Ẩm thực + chụp ảnh • 2 người</div>
+          <p><strong>Ngày 1:</strong> Phố cổ → Chùa Cầu → Cao lầu Bá Lễ → Hoàng hôn sông Hoài</p>
+          <p><strong>Ngày 2:</strong> Làng rau Trà Quế → Biển An Bàng → Mì Quảng → Chợ đêm</p>
+          <p><strong>Ngày 3:</strong> Làng gốm Thanh Hà → Mua quà → Về</p>
+          <p><span class="badge badge-green">📷 Kèm ảnh minh họa</span></p>
+        </div>
+        <div class="card-demo">
+          <h4>🌲 Đà Lạt — 2 ngày 1 đêm</h4>
+          <div class="loc">Thiên nhiên + cà phê • đi 1 mình</div>
+          <p><strong>Ngày 1:</strong> Ga Đà Lạt → Thiền viện Trúc Lâm → Hồ Tuyền Lâm → Cà phê Làng Cù Lần</p>
+          <p><strong>Ngày 2:</strong> Chợ Đà Lạt → Dinh Bảo Đại → Quán cà phê view đồi → Về</p>
+          <p><span class="badge badge-green">📷 Kèm ảnh minh họa</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form preview -->
+    <div class="section">
+      <h2>📋 Form thu nhu cầu (Google Form)</h2>
+      <div class="form-preview">
+        <h4>TraVy — Gửi nhu cầu du lịch của bạn</h4>
+        <div class="fake-field">📍 Bạn muốn đi đâu? [___________________]</div>
+        <div class="fake-field">📅 Bao nhiêu ngày? [___________________]</div>
+        <div class="fake-field">👥 Đi cùng ai? [___________________]</div>
+        <div class="fake-field">🎯 Sở thích? [___________________]</div>
+        <div class="fake-field">📝 Ghi chú thêm [___________________]</div>
+        <div class="fake-btn">📨 Gửi nhu cầu</div>
+        <p style="margin-top: 12px; font-size: 12px; color: #888;">(Link Google Form thật sẽ được đính kèm bài đăng)</p>
+      </div>
+    </div>
+
+    <!-- Tracking -->
+    <div class="section">
+      <h2>📊 Track những gì?</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div style="background: #f5f5f5; border-radius: 8px; padding: 16px;">
+          <h4 style="font-size: 14px; margin-bottom: 8px;">📈 Quantitative</h4>
+          <ul style="font-size: 13px; padding-left: 16px; color: #555;">
+            <li>Số lượng comment / reaction</li>
+            <li>Số lượng form submit</li>
+            <li>Tỉ lệ user quay lại hỏi thêm</li>
+            <li>Số share bài đăng</li>
+          </ul>
+        </div>
+        <div style="background: #f5f5f5; border-radius: 8px; padding: 16px;">
+          <h4 style="font-size: 14px; margin-bottom: 8px;">💬 Qualitative</h4>
+          <ul style="font-size: 13px; padding-left: 16px; color: #555;">
+            <li>User nói gì về việc tự research? (pain language)</li>
+            <li>User hỏi gì về lịch trình? (trust signal)</li>
+            <li>User có muốn customize không?</li>
+            <li>Có ai hỏi "bao giờ ra mắt" không?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
