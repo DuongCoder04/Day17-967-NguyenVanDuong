@@ -10,7 +10,7 @@
 
 | Hạng mục | Link / ghi chú |
 |----------|----------------|
-| Day 16 artifact 02 | [02-jtbd-project-analysis.md](../Day16-A20-00967-NguyenVanDuong/worksheet/02-jtbd-project-analysis.md) |
+| Day 16 artifact 02 | [02-jtbd-project-analysis.md](https://github.com/DuongCoder04/Day16-A20-00967-NguyenVanDuong/blob/main/worksheet/02-jtbd-project-analysis.md) |
 | Present board / frame / file của bạn | |
 
 ---
