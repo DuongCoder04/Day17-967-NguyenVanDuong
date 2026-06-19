@@ -11,7 +11,7 @@
 | Hạng mục | Link / ghi chú |
 |----------|----------------|
 | Day 16 artifact 02 | [02-jtbd-project-analysis.md](https://github.com/DuongCoder04/Day16-A20-00967-NguyenVanDuong/blob/main/worksheet/02-jtbd-project-analysis.md) |
-| Present board / frame / file của bạn | |
+| Present board / frame / file của bạn | README.md + artifacts trong repo ([link](https://github.com/DuongCoder04/Day17-967-NguyenVanDuong)) |
 
 ---
 
@@ -133,7 +133,7 @@
 
 ## Bước 7 — Present Cá Nhân
 
-**Link / frame present:** _[điền sau khi dựng board]_
+**Link / frame present:** https://github.com/DuongCoder04/Day17-967-NguyenVanDuong — present trực tiếp từ README.md + artifacts trong repo
 
 | Câu hỏi | Điền |
 |---------|------|
